@@ -30,7 +30,11 @@ request.onload = function() {
 
 		for (var i in Array.range(0,5)) {
 
-			table2[i].textContent = data["items"][i]["snippet"]["title"];
+			//table2[i].textContent = data["items"][i]["snippet"]["title"];
+
+			table2[i].innerHTML = "<h5 class=\"title\">" + data["items"][i]["snippet"]["title"] + 
+			"</h5>\n" + "<p class=\"desc\">" + data["items"][i]["snippet"]["description"].substring(0,100)+"..." + "</p>";
+
 		}
 	}
 
