@@ -18,11 +18,17 @@ request.onload = function() {
 	var data = JSON.parse(this.response);
 
 	if (request.status < 200 || request.status > 400) {
-		//printData(data["results"]);
 		console.log('error');
 	} else {
-		var news = document.getElementById("news");
-		news.textContent = data["results"][0]["title"];
+
+		var table = document.querySelectorAll(".nyt");
+
+		Array.range = (start, end) => Array.from({length: (end - start)}, (v, k) => k + start);;
+
+		for (var i in Array.range(0,5)) {
+
+			table[i].textContent = data["results"][i]["title"];
+		}
 	}
 
 	
