@@ -1,9 +1,9 @@
-let key = "XO1cYKAtTKHJ222AQn41KygfqgmHMBjT";
+let apiKey = "XO1cYKAtTKHJ222AQn41KygfqgmHMBjT";
 var request = new XMLHttpRequest();
 
 function buildURL(section) {
 
-	return "https://api.nytimes.com/svc/topstories/v2/" + section + ".json?api-key=" + key;
+	return "https://api.nytimes.com/svc/topstories/v2/" + section + ".json?api-key=" + apiKey;
 }
 
 function printData(data) {
@@ -18,7 +18,7 @@ request.onload = function() {
 	var data = JSON.parse(this.response);
 
 	if (request.status < 200 || request.status > 400) {
-		console.log('error');
+		console.log(request.status);
 	} else {
 
 		var table = document.querySelectorAll(".nyt");
