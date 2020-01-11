@@ -1,3 +1,5 @@
+console.log("running NYT api handler")
+
 let apiKey = "XO1cYKAtTKHJ222AQn41KygfqgmHMBjT";
 var request = new XMLHttpRequest();
 
@@ -12,7 +14,7 @@ function printData(data) {
 
 }
 
-request.open('GET', buildURL("arts"), true);
+request.open('GET', buildURL("home"), true);
 request.onload = function() {
 
 	var data = JSON.parse(this.response);
@@ -29,7 +31,8 @@ request.onload = function() {
 
 		for (var i in Array.range(0,5)) {
 
-			table[i].textContent = data["results"][i]["title"];
+			table[i].innerHTML = "<p class=\"headline\">" + data["results"][i]["title"] + 
+			"</p>\n" + "<p class=\"desc\">" + data["results"][i]["abstract"] + "</p>";
 		}
 	}
 

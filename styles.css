@@ -1,6 +1,37 @@
 h1 {
 
-	font-family: serif;
-	size: 20px;
+	/*font-family: 75% georgia, sans-serif;*/
+	/*font-family: 'Ibarra Real Nova', sans-serif;*/
+	size: 50px;
 	text-align: center;
+
+}
+
+body {
+
+	font-family: 'Open Sans', serif;
+}
+#left {
+
+	position: absolute;
+	top: 300;
+	left: 100;
+	width: 500px;
+	height: 500px;
+	border: 1px solid #000;
+}
+
+#right {
+
+	position: absolute;
+	top: 300;
+	right: 0;
+	width: 500px;
+	height: 500px;
+	border:1px solid #000;
+}
+
+.nyt {
+
+	font-family: 
 }
