@@ -11,24 +11,27 @@ body {
 
 	font-family: 'Open Sans', serif;
 }
+
 #left {
 
+	background-color: #F5F5F5;
 	position: absolute;
 	top: 300;
 	left: 100;
 	width: 500px;
 	height: 500px;
-	border: 1px solid #000;
+	border: 1px solid white;
 }
 
 #right {
 
+	background-color: #F5F5F5;
 	position: absolute;
 	top: 300;
 	right: 0;
 	width: 500px;
 	height: 500px;
-	border:1px solid #000;
+	border:1px solid white;
 }
 
 .nyt {
