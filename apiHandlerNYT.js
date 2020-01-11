@@ -23,7 +23,9 @@ request.onload = function() {
 
 		var table = document.querySelectorAll(".nyt");
 
-		Array.range = (start, end) => Array.from({length: (end - start)}, (v, k) => k + start);;
+		Array.range = (start, end) => Array.from({length: (end - start)}, (v, k) => k + start);
+
+		console.log(data);
 
 		for (var i in Array.range(0,5)) {
 
