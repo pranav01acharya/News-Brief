@@ -1,4 +1,4 @@
-let key = "AIzaSyDjhdqrm8IPmkI7uydvAepgrQraWL5gx5k";
+let key = ##########;
 var request = new XMLHttpRequest();
 
 function buildURL(section) {
