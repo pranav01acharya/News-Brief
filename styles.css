@@ -38,23 +38,27 @@ body {
 
 	width: 500px;
 	border-left: 10%;
+	vertical-align: top;
 }
 
 .card-text {
 
 	width: 500px;
 	border-left: 10%;
+	vertical-align: top;
 }
 
 #left {
 
 	
-	left: 100;
+	left: 10%;
 	border: 1px solid white;
+	vertical-align: top;
 }
 
 #right {
 
-	left: 100;
+	left: 60%;
 	border:1px solid white;
+	vertical-align: top;
 }

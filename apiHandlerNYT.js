@@ -31,8 +31,8 @@ request.onload = function() {
 
 		for (var i in Array.range(0,5)) {
 
-			table[i].innerHTML = "<h5 class=\"headline\">" + data["results"][i]["title"] + 
-			"</h5>\n" + "<p class=\"desc\">" + data["results"][i]["abstract"] + "</p>";
+			table[i].innerHTML = "<a href=\"" + data["results"][i]["url"] + "\"><h5 class=\"headline\">" + data["results"][i]["title"] + 
+			"</a></h5>\n" + "<p class=\"desc\">" + data["results"][i]["abstract"].substring(0,100) + "...</p>";
 		}
 	}
 
