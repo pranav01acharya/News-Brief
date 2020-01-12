@@ -1,6 +1,5 @@
 h1 {
 
-	font-size: 70px;
 	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -58,5 +57,20 @@ body {
 
 	left: 60%;
 	border:1px solid white;
+	vertical-align: top;
+}
+
+.thumbnail {
+	width: 25%;
+	vertical-align: top;
+
+}
+
+.youtube {
+	width: 75%;
+}
+
+img {
+
 	vertical-align: top;
 }

@@ -22,7 +22,8 @@ request.onload = function() {
 	if (request.status < 200 || request.status > 400) {
 		console.log(request.status);
 	} else {
-		var table2 = document.querySelectorAll(".youtube");
+		var tnTable = document.querySelectorAll(".thumbnail");
+		var ytTable = document.querySelectorAll(".youtube");
 
 		Array.range = (start, end) => Array.from({length: (end - start)}, (v, k) => k + start);
 
@@ -30,10 +31,9 @@ request.onload = function() {
 
 		for (var i in Array.range(0,5)) {
 
-			//table2[i].textContent = data["items"][i]["snippet"]["title"];
-
-			table2[i].innerHTML = "<a href= \"https://www.youtube.com/watch?v=" + data["items"][i]["id"]["videoId"] + "\"><h5 class=\"title\">" + data["items"][i]["snippet"]["title"] + 
-			"</h5></a>\n" + "<p class=\"desc\">" + data["items"][i]["snippet"]["description"].substring(0,200)+"..." + 
+			tnTable[i].innerHTML = "<a href=\"https://www.youtube.com/watch?v=" + data["items"][i]["id"]["videoId"] + "\"><img src=\"" + data["items"][i]["snippet"]["thumbnails"]["default"]["url"] + "\"></a>"
+			ytTable[i].innerHTML = "<a href= \"https://www.youtube.com/watch?v=" + data["items"][i]["id"]["videoId"] + "\"><h5 class=\"title\">" + data["items"][i]["snippet"]["title"] + 
+			"</h5></a>\n" + "<p class=\"desc\">" + data["items"][i]["snippet"]["description"].substring(0,90)+"..." + 
 			"</p>" + "<p class=\"link\">";
 
 		}
