@@ -1,5 +1,3 @@
-console.log("running NYT api handler")
-
 let apiKey = "XO1cYKAtTKHJ222AQn41KygfqgmHMBjT";
 var request = new XMLHttpRequest();
 
