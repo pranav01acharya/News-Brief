@@ -1,5 +1,3 @@
-console.log("running Youtube api handler")
-
 let key = "AIzaSyDjhdqrm8IPmkI7uydvAepgrQraWL5gx5k";
 var request = new XMLHttpRequest();
 
