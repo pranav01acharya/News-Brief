@@ -32,8 +32,9 @@ request.onload = function() {
 
 			//table2[i].textContent = data["items"][i]["snippet"]["title"];
 
-			table2[i].innerHTML = "<h5 class=\"title\">" + data["items"][i]["snippet"]["title"] + 
-			"</h5>\n" + "<p class=\"desc\">" + data["items"][i]["snippet"]["description"].substring(0,100)+"..." + "</p>";
+			table2[i].innerHTML = "<a href= \"https://www.youtube.com/watch?v=" + data["items"][i]["id"]["videoId"] + "\"><h5 class=\"title\">" + data["items"][i]["snippet"]["title"] + 
+			"</h5></a>\n" + "<p class=\"desc\">" + data["items"][i]["snippet"]["description"].substring(0,100)+"..." + 
+			"</p>" + "<p class=\"link\">";
 
 		}
 	}
