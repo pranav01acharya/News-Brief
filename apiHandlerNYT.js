@@ -1,4 +1,4 @@
-let apiKey = "XO1cYKAtTKHJ222AQn41KygfqgmHMBjT";
+let apiKey = #########;
 var request = new XMLHttpRequest();
 
 function buildURL(section) {
