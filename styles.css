@@ -1,8 +1,10 @@
 h1 {
 
-	size: 50px;
+	font-size: 70px;
 	text-align: center;
+	padding-top: 50px;
 	padding-bottom: 50px;
+	font-family: 'Great Vibes', cursive;
 
 }
 
@@ -24,7 +26,6 @@ body {
 	border-left: 10%;
 	vertical-align: top;
 	font-size: 20px;
-	font-weight: 500; 
 }
 
 .card-body, .card-title, .card-text {
