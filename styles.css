@@ -39,7 +39,7 @@ body {
 #left {
 
 	left: 10%;
-	border: 1px solid white;
+	
 	vertical-align: top;
 }
 
@@ -57,7 +57,7 @@ body {
 #right {
 
 	left: 60%;
-	border:1px solid white;
+	
 	vertical-align: top;
 }
 
