@@ -15,4 +15,6 @@ News Brief shown running on desktop.
 
 ## What's next for News Brief
 
-We plan to expand News Brief to eventually include a variety of news sites and social media platforms, giving users the ability to choose the sources that they receive their news from. We will allow users to customize the number of articles/results from each source, the theme/colors of the webpage, and support for logins to save individual user settings.
+We plan to expand News Brief to eventually include a variety of news sites and social media platforms, giving users the ability to choose the sources that they receive their news from. We will allow users to customize the number of articles/results from each source, the theme/colors of the webpage, and support for logins to save individual user settings. We can use a Flask backend to hide the calls to the New York Times API and Youtube API, and to store individual user preferences.
+
+UPDATE: Flask backend was added, see https://github.com/mingjia-wang/News-Brief-Full
